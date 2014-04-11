@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="hackerpins">
+<head>
+    <title>HackerPins</title>
+    <meta charset="utf-8">
+    <link href="styles/bootstrap.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <ul class="nav nav-pills pull-right">
+        <li class="active"><a href="/">Home</a></li>
+    </ul>
+    <h3 class="text-muted">HackerPins</h3>
+</div>
+
+<div class="container">
+    <ul class="nav nav-tabs nav-justified">
+            <li class="active"><a href="#/"><h4><i class="glyphicon glyphicon-fire"></i> Hot Stories</h4></a></li>
+            <li><a href="#/stories/new"><h4><i class="glyphicon glyphicon-plus"></i> Submit Story</h4></a></li>
+    </ul>
+    <div ng-view="" class="top-buffer"></div>
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
